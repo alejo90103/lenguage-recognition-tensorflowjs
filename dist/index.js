@@ -177,6 +177,13 @@ model.add(tf.layers.dense({
   units: 2
 }));
 
+// // hidden layer
+// model.add(tf.layers.dense({
+//   inputShape: [3],
+//   activation: 'sigmoid',
+//   units: 2
+// }))
+
 // output layer
 model.add(tf.layers.dense({
   activation: 'sigmoid',
@@ -197,6 +204,7 @@ console.log(testingData);
 const startTime = Date.now();
 model.fit(trainingDataInput, trainingDataOutput, { epochs: 100 }).then(history => {
   console.log(history);
+  console.log(Date.now() - startTime);
   model.predict(testingData).print();
 });
 },{}]},{},["index.js"], null)
