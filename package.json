@@ -1,0 +1,18 @@
+{
+  "name": "lenguage-recognition-tfjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel --target=node index.js & nodemon dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Herrera",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.12.4",
+    "@tensorflow/tfjs-node": "^0.1.11",
+    "nodemon": "^1.18.3",
+    "parcel": "^1.9.7"
+  }
+}
